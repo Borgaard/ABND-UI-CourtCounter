@@ -8,35 +8,45 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        >
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="24dp"
+            >
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team CANADA!" />
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif"
+                android:text="Team A CANADA!" />
 
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="4dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="24dp"
+
                 android:text="0" />
 
             <Button
                 android:id="@+id/aadd_3_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:onClick="addThreeTeamA"
                 android:text="+3 Points" />
 
@@ -44,7 +54,8 @@
                 android:id="@+id/aadd_2_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:onClick="addTwoTeamA"
                 android:text="+2 Points" />
 
@@ -52,22 +63,29 @@
                 android:id="@+id/aadd_free_throw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:onClick="addFreeThrowTeamA"
                 android:text="FREE THROW" />
         </LinearLayout>
-
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            />
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginLeft="24dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif"
                 android:text="Team Birthday!" />
 
             <TextView
@@ -75,14 +93,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="4dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="24dp"
                 android:text="0" />
 
             <Button
                 android:id="@+id/badd_3_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:onClick="addThreeTeamB"
                 android:text="+3 Points" />
 
@@ -90,7 +108,8 @@
                 android:id="@+id/badd_2_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:onClick="addTwoTeamB"
                 android:text="+2 Points" />
 
@@ -98,7 +117,6 @@
                 android:id="@+id/badd_free_throw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:onClick="addFreeThrowTeamB"
                 android:text="FREE THROW" />
         </LinearLayout>
@@ -110,6 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
         android:onClick="reset"
         android:text="Reset" />
 
